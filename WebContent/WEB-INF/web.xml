@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xmlns="http://java.sun.com/xml/ns/javaee" 
+xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" 
+id="WebApp_ID" version="2.5"
+ metadata-complete="true">
+  <display-name>名字</display-name>
+  
+	<servlet>
+    <description></description>
+    <display-name>UploadHandleServlet</display-name>
+    <servlet-name>UploadHandleServlet</servlet-name>
+    <servlet-class>servlet.UploadHandleServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UploadHandleServlet</servlet-name>
+    <url-pattern>/UploadHandleServlet</url-pattern>   
+</servlet-mapping>
+
+	<servlet>
+    	<description></description>
+    	<display-name>AidReleaseServlet</display-name>
+    	<servlet-name>AidReleaseServlet</servlet-name>
+    	<servlet-class>servlet.AidReleaseServlet</servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+    	<servlet-name>AidReleaseServlet</servlet-name>
+    	<url-pattern>/askAidReleases</url-pattern>   
+	</servlet-mapping>
+
+	<servlet>
+    	<description></description>
+    	<display-name>UserInfoServlet</display-name>
+    	<servlet-name>UserInfoServlet</servlet-name>
+    	<servlet-class>servlet.UserInfoServlet</servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+    	<servlet-name>UserInfoServlet</servlet-name>
+    	<url-pattern>/askUserInfo</url-pattern>   
+	</servlet-mapping>
+
+	<servlet>
+    	<description></description>
+    	<display-name>UploadAidTreatServlet</display-name>
+    	<servlet-name>UploadAidTreatServlet</servlet-name>
+    	<servlet-class>servlet.UploadAidTreatServlet</servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+    	<servlet-name>UploadAidTreatServlet</servlet-name>
+    	<url-pattern>/uploadAidTreat</url-pattern>   
+	</servlet-mapping>
+	
+	<servlet>
+    	<description></description>
+    	<display-name>AidCaseServlet</display-name>
+    	<servlet-name>AidCaseServlet</servlet-name>
+    	<servlet-class>servlet.AidCaseServlet</servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+    	<servlet-name>AidCaseServlet</servlet-name>
+    	<url-pattern>/askAidCase</url-pattern>   
+	</servlet-mapping>
+	
+	<servlet>
+    	<description></description>
+    	<display-name>AskAidTreatServlet</display-name>
+    	<servlet-name>AskAidTreatServlet</servlet-name>
+    	<servlet-class>servlet.AskAidTreatServlet</servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+    	<servlet-name>AskAidTreatServlet</servlet-name>
+    	<url-pattern>/askAidTreat</url-pattern>   
+	</servlet-mapping>
+	
+	<servlet>
+    	<description></description>
+    	<display-name>LoginServlet</display-name>
+    	<servlet-name>LoginServlet</servlet-name>
+    	<servlet-class>servlet.LoginServlet</servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+    	<servlet-name>LoginServlet</servlet-name>
+    	<url-pattern>/login</url-pattern>   
+   	</servlet-mapping>
+   	
+   	<servlet>
+    	<description></description>
+    	<display-name>UserSettingServlet</display-name>
+    	<servlet-name>UserSettingServlet</servlet-name>
+    	<servlet-class>servlet.UserSettingServlet</servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+    	<servlet-name>UserSettingServlet</servlet-name>
+    	<url-pattern>/userSetting</url-pattern>
+	</servlet-mapping>
+	
+<welcome-file-list>
+	<welcome-file>index.jsp</welcome-file>
+</welcome-file-list>
+</web-app>
